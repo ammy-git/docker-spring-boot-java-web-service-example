@@ -11,11 +11,11 @@
     <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://10.10.41.9:8081/repository/project-snapshot/</url>
+            <url>http://10.10.41.9:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://10.10.41.9:8081/repository/project-snapshot/</url>
+            <url>http://10.10.41.9:8081/repository/maven-releases/</url>
         </snapshotRepository>
     </distributionManagement>  
 
@@ -48,5 +48,19 @@
             </plugin>
         </plugins>
     </build>
+  
+    <repositories>
+      <repository>
+        <id>repository.spring.milestone</id>
+        <name>maven-releases</name>
+        <url>https://repo.spring.io/milestone</url>
+      </repository>
+      
+      <repository>
+        <id>maven-releases</id>
+        <name>maven-releases</name>
+        <url>http://10.10.41.9:8081/repository/maven-releases/</url>
+      </repository>
+    </repositories>
 
 </project>
